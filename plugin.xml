@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-i18n-app-name" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+  <name>cordova-plugin-i18n-app-name</name>
+
+  <platform name="android">
+    <hook src="scripts/copy_android_strings.js" type="after_prepare" />
+  </platform>
+
+  <platform name="ios">
+    <hook src="scripts/copy_ios_strings.js" type="after_prepare" />
+  </platform>
+</plugin>
